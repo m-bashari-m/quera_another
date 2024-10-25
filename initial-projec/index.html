@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shaparak Task Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body dir="">
+    <div class="container">
+        <h1>Shaparak Scheduler</h1>
+        <form id="taskForm">
+            <input type="text" id="taskName" placeholder="Task Name" required>
+            <input type="datetime-local" id="taskTime" required>
+            <input type="number" id="taskDuration" placeholder="Duration (minutes)" required>
+            <input type="text" id="taskDependency" placeholder="Dependency">
+            <button type="submit">Add Task</button>
+        </form>
+
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Start Time</th>
+                    <th>Status</th>
+                    <th>Dependency</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="taskList">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
